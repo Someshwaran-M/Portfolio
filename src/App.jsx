@@ -1,43 +1,10 @@
-import { Routes, Route } from "react-router-dom";
-
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Services from "./components/Services";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import ServiceDetails from "./components/ServiceDetails";
-
-
-
-function Home() {
-  return (
-    <>
-      <Hero />
-      <About />
-      <Services />
-      <Skills />
-      <Projects />
-      <Contact />
-     
-    </>
-  );
-}
+import React from "react";
 
 function App() {
   return (
-    <>
-      <Navbar />
-
-      <Routes>
-        {/* ✅ Main Portfolio Page */}
-        <Route path="/" element={<Home />} />
-
-        {/* ✅ Service Details Page */}
-        <Route path="/service/:id" element={<ServiceDetails />} />
-      </Routes>
-    </>
+    <div className="App">
+      <h1>EPSILORA TECHNOLOGY</h1>
+    </div>
   );
 }
 
